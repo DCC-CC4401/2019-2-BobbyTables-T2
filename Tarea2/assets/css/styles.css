@@ -161,6 +161,14 @@ a:hover { text-decoration: underline; }
   padding-bottom: 45px;
 }
 
+#w2 {
+  display: block;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+
 #content {
   display: block;
   width: 100%;
