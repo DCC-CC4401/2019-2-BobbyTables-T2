@@ -258,6 +258,7 @@ a:hover { text-decoration: underline; }
   width: 250px;
   font-weight: bold;
 }
+
 .setting span img { 
   cursor: pointer;
 }
