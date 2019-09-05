@@ -20,9 +20,10 @@
 
 
   <!-- Bootstrap CSS -->
-  <link rel="icon" type="image/png" href="assets/images/tick.png"/>
+  <link rel="icon" type="image/png" href="assets/images/tick.png" />
   <link rel="stylesheet" type="text/css" media="all" href="assets/css/styles.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" media="all" href="assets/css/table.css">
 
 
   <!-- Optional JavaScript -->
@@ -31,7 +32,7 @@
   <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
 
 
-  <title> Landing Page </title>
+  <title> BobbyTables </title>
 
 </head>
 
@@ -74,9 +75,183 @@
   </div>
 
   <!-- fin Navbar -->
-  <!--  -->
+  <!-- landing page -->
 
+  <div id="w">
+    <div id="content" class="clearfix">
+      <div id="userphoto"><img src="assets/images/tick.png" alt="default avatar"></div>
+      <h1>BobbyTables</h1>
 
+      <h3>Agregar actividad:</h3>
+      <p>jkasbgdjkwdka</p>
+
+      <nav id="profiletabs">
+        <ul class="clearfix">
+          <li><a href="#week">Grilla de actividades semana actual</a></li>
+          <li><a href="#resu">Resumen de tiempos por categoría</a></li>
+        </ul>
+      </nav>
+
+      <section id="week" class="hidden">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <table id="t1">
+          <thead>
+            <tr>
+              <th></th>
+              <th>
+                <span>Lunes</span>
+              </th>
+              <th>
+                <span>Martes</span>
+              </th>
+              <th>
+                <span>Miércoles</span>
+              </th>
+              <th>
+                <span>Jueves</span>
+              </th>
+              <th>
+                <span>Viernes</span>
+              </th>
+              <th>
+                <span>Sábado</span>
+              </th>
+              <th>
+                <span>Domingo</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td><span>0:00</span></td>
+            </tr>
+
+            <tr>
+              <td><span>1:00</span></td>
+            </tr>
+
+            <tr>
+              <td><span>2:00</span></td>
+            </tr>
+
+            <tr>
+              <td><span>3:00</span></td>
+            </tr>
+
+            <tr>
+              <td><span>4:00</span></td>
+            </tr>
+
+            <tr>
+              <td><span>5:00</span></td>
+            </tr>
+
+            <tr>
+              <td><span>6:00</span></td>
+            </tr>
+
+            <tr>
+              <td><span>7:00</span></td>
+            </tr>
+
+            <tr>
+              <td><span>8:00</span></td>
+            </tr>
+
+            <tr>
+              <td><span>9:00</span></td>
+            </tr>
+
+            <tr>
+              <td><span>10:00</span></td>
+            </tr>
+
+            <tr>
+              <td><span>11:00</span></td>
+            </tr>
+
+            <tr>
+              <td><span>12:00</span></td>
+            </tr>
+
+            <tr>
+              <td><span>13:00</span></td>
+            </tr>
+
+            <tr>
+              <td><span>14:00</span></td>
+            </tr>
+
+            <tr>
+              <td><span>15:00</span></td>
+            </tr>
+
+            <tr>
+              <td><span>16:00</span></td>
+            </tr>
+
+            <tr>
+              <td><span>17:00</span></td>
+            </tr>
+
+            <tr>
+              <td><span>18:00</span></td>
+            </tr>
+
+            <tr>
+              <td><span>19:00</span></td>
+            </tr>
+
+            <tr>
+              <td><span>20:00</span></td>
+            </tr>
+
+            <tr>
+              <td><span>21:00</span></td>
+            </tr>
+
+            <tr>
+              <td><span>22:00</span></td>
+            </tr>
+
+            <tr>
+              <td><span>23:00</span></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </section>
+
+      <section id="resu" class="hidden">
+
+      </section>
+
+    </div><!-- @end #content -->
+  </div><!-- @end #w -->
+
+  <!-- fin landing page -->
+
+  <script type="text/javascript">
+    $(function () {
+      $('#profiletabs ul li a').on('click', function (e) {
+        e.preventDefault();
+        var newcontent = $(this).attr('href');
+
+        $('#profiletabs ul li a').removeClass('sel');
+        $(this).addClass('sel');
+
+        $('#content section').each(function () {
+          if (!$(this).hasClass('hidden')) { $(this).addClass('hidden'); }
+        });
+
+        $(newcontent).removeClass('hidden');
+      });
+    });
+  </script>
+
+  <!-- fin Pestañas -->
 </body>
 
 </html>

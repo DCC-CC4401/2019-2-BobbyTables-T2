@@ -62,13 +62,34 @@ blockquote, q { quotes: none; }
 blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 strong { font-weight: bold; } 
 
-table { border-collapse: collapse; border-spacing: 0; }
+table { border-collapse: collapse; border-spacing: 0;}
+
+table span {
+  font-weight: bold;
+  font-size: 100%;
+}
+
+th, tr, td {
+  padding: 15px;
+  text-align: left;
+  font-size: 100%;
+}
+
+table#t1 {
+  width: 100%;    
+  background-color: #f0f0f0;
+}
+
+table#t1 th {
+  background-color: #BDF279;
+}
+
 img { border: 0; max-width: 100%; }
 
 #topbar {
   background: #4f4a41;
   
-  width:100%
+  
   overflow: hidden;
   -webkit-transition: height 0.5s linear;
   -moz-transition: height 0.5s linear;
@@ -206,7 +227,9 @@ a:hover { text-decoration: underline; }
 }
 
 #profiletabs ul { list-style: none; display: block; width: 90%; height: 50px; }
+
 #profiletabls ul li { float: left; }
+
 #profiletabs ul li a { 
   display: block;
   float: left;
@@ -224,6 +247,7 @@ a:hover { text-decoration: underline; }
   border-radius: 5px;
   border-bottom-left-radius: 0;
 }
+
 #profiletabs ul li a:hover {
   text-decoration: none;
   background: #dad7c2;
@@ -234,7 +258,6 @@ a:hover { text-decoration: underline; }
   background: #fff;
   border-color: #d1cdb5;
 }
-
 
 /** profile content sections **/
 .hidden {
