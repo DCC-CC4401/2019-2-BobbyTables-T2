@@ -155,7 +155,7 @@ a:hover { text-decoration: underline; }
 /** page structure **/
 #w {
   display: block;
-  width: 1500px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 45px;
@@ -163,7 +163,7 @@ a:hover { text-decoration: underline; }
 
 #w2 {
   display: block;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 45px;
@@ -185,6 +185,7 @@ a:hover { text-decoration: underline; }
   float: right;
   margin-left: 10px;
   margin-bottom: 8px;
+  padding-right: 45px;
 }
 #userphoto img {
   display: block;
@@ -200,10 +201,11 @@ a:hover { text-decoration: underline; }
 #profiletabs {
   display: block;
   margin-bottom: 4px;
+  /*padding-top: 100px;*/
   height: 50px;
 }
 
-#profiletabs ul { list-style: none; display: block; width: 70%; height: 50px; }
+#profiletabs ul { list-style: none; display: block; width: 90%; height: 50px; }
 #profiletabls ul li { float: left; }
 #profiletabs ul li a { 
   display: block;
