@@ -68,7 +68,7 @@ img { border: 0; max-width: 100%; }
 #topbar {
   background: #4f4a41;
   
-  
+  width:100%
   overflow: hidden;
   -webkit-transition: height 0.5s linear;
   -moz-transition: height 0.5s linear;
