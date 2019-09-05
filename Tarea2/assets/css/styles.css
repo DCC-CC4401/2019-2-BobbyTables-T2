@@ -88,8 +88,6 @@ img { border: 0; max-width: 100%; }
 
 #topbar {
   background: #4f4a41;
-  
-  
   overflow: hidden;
   -webkit-transition: height 0.5s linear;
   -moz-transition: height 0.5s linear;
@@ -206,7 +204,7 @@ a:hover { text-decoration: underline; }
   float: right;
   margin-left: 10px;
   margin-bottom: 8px;
-  padding-right: 45px;
+  padding-right: 0px;
 }
 #userphoto img {
   display: block;
