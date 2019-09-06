@@ -40,18 +40,18 @@
 
   <!-- Navbar -->
   <div id="topbar">
-    <a class="navbar-brand" href="#" style="position:absolute; left:10px">
+    <a class="navbar-brand" href="#" style="position:absolute; left:13px">
       <img src="assets/images/home.ico" width="40" alt="home icon"> Inicio
     </a>
-    <a class="navbar-brand" href="#" style="position:absolute; right:100px">
+    <a class="navbar-brand" href="#" style="position:absolute; right:95px">
       <img src="assets/images/user_ico.png" width="40" alt="user icon"> Juan Perez
     </a>
-    <a class="navbar-brand" href="#" style="position:absolute; right:10px">
+    <a class="navbar-brand" href="#" style="position:absolute; right:5px">
       <img src="assets/images/logout.ico" width="40" alt="logout icon"> Salir
     </a>
   </div>
-
   <!-- fin Navbar -->
+
   <!-- landing page -->
 
   <div id="w">
@@ -60,7 +60,25 @@
       <h1>BobbyTables</h1>
 
       <h3>Agregar actividad:</h3>
-      <p>jkasbgdjkwdka</p>
+
+      <button onclick="functionType()" type="button">
+        <i class="material-icons"> Actividad tipo </i>
+      </button>
+      <button onclick="functionNew()" type="button">
+          <i class="material-icons"> Actividad nueva </i>
+        </button>
+
+      <div id="typeAct" style="display: none">
+        ...
+      </div>
+
+      <div id="newAct" style="display: none">
+        <div class="topnav">
+          <input type="text" placeholder="  ingrese nombre">
+          <input type="text" placeholder="  ingrese descripción">
+          <input type="text" placeholder="  ingrese categoría">
+        </div>
+      </div>
 
       <nav id="profiletabs">
         <ul class="clearfix">
@@ -204,6 +222,7 @@
       <section id="resu" class="hidden">
 
         <p>insert smth</p>
+
       </section>
 
     </div><!-- @end #content -->
@@ -233,6 +252,32 @@
         }
       });
     });
+  </script>
+
+  <script>
+    function functionNew() {
+      var inputs = document.getElementById("newAct");
+      var dontshow = document.getElementById("typeAct");
+      dontshow.style.display = "none";
+      if (inputs.style.display === "none") {
+        inputs.style.display = "block";
+      } else {
+        inputs.style.display = "none";
+      }
+    }
+  </script>
+
+  <script>
+    function functionType() {
+      var inputs = document.getElementById("typeAct");
+      var dontshow = document.getElementById("newAct");
+      dontshow.style.display = "none";
+      if (inputs.style.display === "none") {
+        inputs.style.display = "block";
+      } else {
+        inputs.style.display = "none";
+      }
+    }
   </script>
 
   <!-- fin Pestañas -->
