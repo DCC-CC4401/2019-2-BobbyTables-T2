@@ -60,15 +60,111 @@
 
       <h3>Agregar actividad:</h3>
 
-      <button onclick="functionType()" type="button">
-        <i class="material-icons"> Actividad tipo </i>
+      <button onclick="functionType()" type="button"">
+        <i class=" material-icons"> Actividad tipo </i>
       </button>
-      <button onclick="functionNew()" type="button">
-          <i class="material-icons"> Actividad nueva </i>
-        </button>
+      <button onclick="functionNew()" type="button" style="margin-left: 5px">
+        <i class="material-icons"> Actividad nueva </i>
+      </button>
+      <br>
 
       <div id="typeAct" style="display: none">
-        ...
+        <p>
+          <h6>Las actividades tipo tienen nombre, descripción y categoría. Los otros datos se modifican desde el perfil.
+            <br>
+            Elija una actividad de la siguiente lista:
+          </h6>
+        </p>
+
+        <div class=r ow>
+          <div class="table-responsive">
+            <table style="width:100%" class="table">
+
+              <!-- Cabecera -->
+              <thead>
+                <tr>
+                  <th class="text-center">
+                    <div class="form-check" style="margin-bottom: 30%">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="" checked="false">
+                        <span class="form-check-sign">
+                          <span class="check"> </span>
+                        </span>
+                      </label>
+                    </div>
+
+                  </th>
+                  <th>
+                    <h5><b> Nombre </b></h5>
+                  </th>
+                  <th>
+                    <h5><b> Categoría </b></h5>
+                  </th>
+                  <th>
+                    <h5><b> Descripción </b></h5>
+                  </th>
+                  <th> <h5><b> Agregar </b></h5>
+                  </th>
+                </tr>
+              </thead>
+
+              <tr>
+                <td class="text-center">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="" checked="false">
+                      <span class="form-check-sign">
+                        <span class="check"> </span>
+                      </span>
+                    </label>
+                  </div>
+                </td>
+                <td> Estudiar Ramo X </td>
+                <td>
+                  Estudio
+                </td>
+                <td> Se estudiaron pautas. </td>
+
+                <td><button type="button">
+                    <i class="material-icons"> Agregar </i>
+                  </button> </td>
+              </tr>
+
+              <tr>
+                <td class="text-center">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="" checked="false">
+                      <span class="form-check-sign">
+                        <span class="check"> </span>
+                      </span>
+                    </label>
+                  </div>
+                </td>
+                <td> Estudiar Ramo Y </td>
+                <td>
+                  Estudio
+                </td>
+                <td> Se resolvieron controles. </td>
+
+                <td><button type="button">
+                    <i class="material-icons"> Agregar </i>
+                  </button> </td>
+              </tr>
+
+            </table>
+          </div>
+        </div>
+
+        <!-- Boton agregar todo -->
+        <div style="margin-left: 0%">
+            <button type="button">
+              <i class="material-icons"> Agregar seleccionadas </i>
+            </button>
+          </div>
+
+          <!-- fin Boton agregar todo -->
+          <br>
       </div>
 
       <div id="newAct" style="display: none">
