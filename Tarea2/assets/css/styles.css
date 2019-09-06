@@ -104,10 +104,14 @@ img { border: 0; max-width: 100%; }
   opacity: 0.5;
   font-weight: bold;
   padding-top: 10px;
+  display:inline-block;
+  line-height:inherit;
+  white-space:nowrap;
 }
 
 #topbar a:hover {
   opacity: 1;
+  text-decoration:none;
 }
 
 /** typography **/
