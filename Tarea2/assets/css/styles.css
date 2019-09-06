@@ -224,6 +224,13 @@ a:hover { text-decoration: underline; }
   box-shadow: 0 1px 3px rgba(0,0,0,0.4);
 }
 
+#userphoto .edit {
+  position:absolute; 
+  right:20px;
+  top:250px;
+  cursor: pointer;
+} 
+
 
 /** profile nav links **/
 #profiletabs {

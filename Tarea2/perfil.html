@@ -63,7 +63,9 @@
     <div id="content" class="clearfix">
 
       <!-- Foto de Perfil -->
-      <div id="userphoto"> <img src="assets/images/avatar.png" alt="default avatar"> </div>
+      <div id="userphoto"> <img src="assets/images/avatar.png" alt="default avatar">
+      <img class="edit" href="#" src="assets/images/edit.png" alt="*Edit*">
+      </div>
 
       <!-- Titulo -->
       <h1> Perfil de usuario</h1>
@@ -244,7 +246,7 @@
                   <td>
                     <img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
                   </td>
-                  <td> Nombre persona</td>
+                  <td> NOMBRE PERSONA</td>
                   <td class="td-actions">
 
                     <button type="button">
@@ -483,7 +485,7 @@
                   <td>
                     <img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
                   </td>
-                  <td> Nombre persona</td>
+                  <td> NOMBRE PERSONA</td>
                   <td class="td-actions">
                     <button type="button">
                       <i class="material-icons"> Aceptar </i>
@@ -518,6 +520,7 @@
               .pagination {
                 display: inline-block;
                 align-content: center;
+                padding-top: 15px;
 
               }
 
@@ -660,7 +663,7 @@
                   <td>
                     <img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
                   </td>
-                  <td> Nombre persona</td>
+                  <td> NOMBRE PERSONA</td>
                   <td class="td-actions">
                     <button type="button">
                       <i class="material-icons"> Enviar </i>
@@ -768,56 +771,88 @@
                   <div class="topnav">
                     <input type="text" placeholder="  ingrese fecha">
                   </div>
-                  
+
                 </td>
                 <td>
                   <div class="topnav">
                     <input type="text" placeholder="  ingrese hora">
                   </div>
-                  
+
                 </td>
                 <td>
                   <div class="topnav">
                     <input type="text" placeholder="  ingrese duración">
                   </div>
-                  
+
                 </td>
                 <td><button type="button">
-                  <i class="material-icons"> Confirmar </i>
-                </button> </td>
+                    <i class="material-icons"> Confirmar </i>
+                  </button> </td>
               </tr>
 
               <tr>
-                  <td class="text-center">
-                    2
-                  </td>
-                  <td> Estudiar Ramo Y </td>
-                  <td>
-                    Estudio
-                  </td>
-                  <td> Se resolvieron controles. </td>
-                  <td>
-                    <div class="topnav">
-                      <input type="text" placeholder="  ingrese fecha">
-                    </div>
-                   
-                  </td>
-                  <td>
-                    <div class="topnav">
-                      <input type="text" placeholder="  ingrese hora">
-                    </div>
-                    
-                  </td>
-                  <td>
-                    <div class="topnav">
-                      <input type="text" placeholder="  ingrese duración">
-                    </div>
-                    
-                  </td>
-                  <td><button type="button">
+                <td class="text-center">
+                  2
+                </td>
+                <td> Estudiar Ramo Y </td>
+                <td>
+                  Estudio
+                </td>
+                <td> Se resolvieron controles. </td>
+                <td>
+                  <div class="topnav">
+                    <input type="text" placeholder="  ingrese fecha">
+                  </div>
+
+                </td>
+                <td>
+                  <div class="topnav">
+                    <input type="text" placeholder="  ingrese hora">
+                  </div>
+
+                </td>
+                <td>
+                  <div class="topnav">
+                    <input type="text" placeholder="  ingrese duración">
+                  </div>
+
+                </td>
+                <td><button type="button">
                     <i class="material-icons"> Confirmar </i>
                   </button> </td>
-                </tr>
+              </tr>
+
+              <tr>
+                <td class="text-center">
+                  3
+                </td>
+                <td> Power Nap </td>
+                <td>
+                  Dormir
+                </td>
+                <td> Se necesitaba descansar. </td>
+                <td>
+                  <div class="topnav">
+                    <input type="text" placeholder="  ingrese fecha">
+                  </div>
+
+                </td>
+                <td>
+                  <div class="topnav">
+                    <input type="text" placeholder="  ingrese hora">
+                  </div>
+
+                </td>
+                <td>
+                  <div class="topnav">
+                    <input type="text" placeholder="  ingrese duración">
+                  </div>
+
+                </td>
+                <td><button type="button">
+                    <i class="material-icons"> Confirmar </i>
+                  </button> </td>
+              </tr>
 
             </table>
           </div>
@@ -825,45 +860,45 @@
 
         <!-- Seleccionar paginas (CSS) -->
         <style>
-            .pagination {
-              display: inline-block;
-              align-content: center;
+          .pagination {
+            display: inline-block;
+            align-content: center;
 
-            }
+          }
 
-            .pagination a {
-              color: black;
-              float: left;
-              padding: 8px 16px;
-              text-decoration: none;
-              transition: background-color .3s;
-              border: 1px solid #ddd;
-            }
+          .pagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid #ddd;
+          }
 
-            .pagination a.active {
-              background-color: #9F9FE9;
-              color: white;
-              border: 1px solid #9F9FE9;
-            }
+          .pagination a.active {
+            background-color: #9F9FE9;
+            color: white;
+            border: 1px solid #9F9FE9;
+          }
 
-            .pagination a:hover:not(.active) {
-              background-color: #ddd;
-            }
-          </style>
+          .pagination a:hover:not(.active) {
+            background-color: #ddd;
+          }
+        </style>
 
-          <div style="padding-left: 40%">
-            <div class="pagination">
-              <a href="#">&laquo;</a>
-              <a href="#" class="active">1</a>
-              <a href="#">2</a>
-              <a href="#">3</a>
-              <a href="#">4</a>
-              <a href="#">5</a>
-              <a href="#">6</a>
-              <a href="#">&raquo;</a>
-            </div>
+        <div style="padding-left: 40%">
+          <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
           </div>
-          <!-- fin Seleccionar paginas -->
+        </div>
+        <!-- fin Seleccionar paginas -->
 
       </section>
 
