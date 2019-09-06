@@ -87,20 +87,25 @@ table#t1 th {
 img { border: 0; max-width: 100%; }
 
 #topbar {
-  background: #4f4a41;
+  background: #7979D2;
   overflow: hidden;
   -webkit-transition: height 0.5s linear;
   -moz-transition: height 0.5s linear;
   transition: height 0.5s linear;
+  width: 100%;
+  height: 60px;
 }
+
 #topbar a {
   color: #fff;
-  font-size:1.3em;
+  font-size:1em;
   line-height: 1.25em;
   text-decoration: none;
   opacity: 0.5;
   font-weight: bold;
+  padding-top: 10px;
 }
+
 #topbar a:hover {
   opacity: 1;
 }
@@ -204,7 +209,7 @@ a:hover { text-decoration: underline; }
   float: right;
   margin-left: 10px;
   margin-bottom: 8px;
-  padding-right: 0px;
+  padding-right: px;
 }
 #userphoto img {
   display: block;
