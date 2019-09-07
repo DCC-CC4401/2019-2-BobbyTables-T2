@@ -15,22 +15,28 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no">
   <meta http-equiv="Content-Type" content="text/html">
 
 
   <!-- Bootstrap CSS -->
-  <link rel="icon" type="image/png" href="assets/images/tick.png"/>
+  <link rel="icon" type="image/png" href="assets/images/tick.png" />
   <link rel="stylesheet" type="text/css" media="all" href="assets/css/styles.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
 
   <!-- Optional JavaScript -->
-  <script type="text/javascript" src="assets/js/jquery-1.10.2.min.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.slim.min.js"></script>
-  <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery-1.10.2.min.js">
 
+  </script>
+  <script type="text/javascript" src="assets/js/jquery.slim.min.js">
 
+  </script>
+  <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js">
+
+  </script>
+
+  <!-- Titulo -->
   <title> Perfil de usuario </title>
 
 </head>
@@ -39,488 +45,836 @@
 
   <!-- Navbar -->
   <div id="topbar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark static-top">
-      <div class="container" style="background-color:#7979D2; padding: 0; padding: left 0";>
-        <a class="navbar-brand" href="#" style="padding: 0%;padding-left: 0" >
-          <img src="assets/images/home.ico" width="40" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            
-            <li class="nav-item ">
-              <a class="nav-link" href="#">
-                <img src="assets/images/user_ico.png" width="40" alt="" style="vertical-align: middle"></a>
-            </li>
-            <li class="nav-item active">
-
-              <a class="nav-link" href="#" style="vertical-align: middle; padding-top:15px">Juan Perez</a>
-            </li>
-
-            <li class="nav-item" style="padding-right: 100px ">
-
-
-
-            </li>
-
-            <li class="nav-item">
-              <a class="navbar-brand" href="#">
-                <img src="assets/images/logout.ico" width="40" alt="" style="vertical-align: middle">
-              </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <a class="navbar-brand" href="#" style="position:absolute; left:15px">
+      <img src="assets/images/home.ico" width="40" alt="home icon"> Inicio
+    </a>
+    <a class="navbar-brand" href="#" style="position:absolute; right:100px">
+      <img src="assets/images/user_ico.png" width="40" alt="user icon"> Juan Perez
+    </a>
+    <a class="navbar-brand" href="#" style="position:absolute; right:6px">
+      <img src="assets/images/logout.ico" width="40" alt="logout icon"> Salir
+    </a>
   </div>
-
   <!-- fin Navbar -->
+
   <!-- Pestañas -->
 
   <div id="w">
     <div id="content" class="clearfix">
-      <div id="userphoto"><img src="assets/images/avatar.png" alt="default avatar"></div>
-      <h1>Perfil de usuario</h1>
 
+      <!-- Foto de Perfil -->
+      <div id="userphoto"> <img src="assets/images/avatar.png" alt="default avatar">
+      <img class="edit" href="#" src="assets/images/edit.png" alt="*Edit*">
+      </div>
+
+      <!-- Titulo -->
+      <h1> Perfil de usuario</h1>
+
+      <!-- Pestañas (botones) -->
       <nav id="profiletabs">
         <ul class="clearfix">
-          <li><a href="#settings">Información</a></li>
-          <li><a href="#friends" class="sel">Lista de amigos</a></li>
-          <li><a href="#requests">Solicitudes de amistad</a></li>
-          <li><a href="#search">Buscar amigos</a></li>
-          <li><a href="#act">Gestionar actividades tipo</a></li>
+
+          <li> <a href="#settings" class="sel"> Información </a> </li>
+          <li> <a href="#friends"> Lista de amigos </a> </li>
+          <li> <a href="#requests"> Solicitudes de amistad </a> </li>
+          <li> <a href="#search"> Buscar amigos </a> </li>
+          <li> <a href="#act"> Gestionar actividades tipo </a> </li>
+
         </ul>
       </nav>
 
-      <section id="settings" class="hidden">
 
-        <p><h2>Información de usuario:</h2></p>
+      <!-- Pestaña INFORMACIONES -->
+      <section id="settings">
+        <!-- Seleccionado por defecto -->
 
-        <p class="setting"><span>Nombre de usuario </span> Juan Perez</p>
-        <p class="setting"><span>Correo electrónico </span> juan.perez@gmail.com</p>
-        <p class="setting"><span>Idioma <img src="assets/images/edit.png" alt="*Edit*"></span> Español (ES)</p>
-        <p class="setting"><span>Privacidad del perfil <img src="assets/images/edit.png" alt="*Edit*"></span> Privado</p>
-        <p class="setting"><b>Contraseña</b> <img src="assets/images/edit.png" alt="*Edit*"></p>
-        <p class="setting"><b>Foto de perfil</b> <img src="assets/images/edit.png" alt="*Edit*"></p>
+        <!-- Filas - Contenido -->
+        <p class="setting"> <span> Nombre de usuario </span> Juan Perez </p>
+        <p class="setting"> <span> Correo electrónico </span> juan.perez@gmail.com </p>
+        <p class="setting"> <span> Idioma <img src="assets/images/edit.png" alt="*Edit*"> </span> Español (ES) </p>
+        <p class="setting"> <span> Privacidad del perfil <img src="assets/images/edit.png" alt="*Edit*"> </span> Privado
+        </p>
+        <p class="setting"> <b> Cambiar contraseña </b> <img src="assets/images/edit.png" alt="*Edit*"> </p>
 
-      </section>
 
-      <section id="friends" style="text-align: center">
+        <!-- failed attempt -->
+        <!--div class = row> 
+                <div class = "table-responsive"> 
+                <table style = "width:100%" class = "table"> 
 
-          <div class=row >
-                <div class="table-responsive">
-                <table style="width:100%" class="table">
-                    <thead>
-                        <tr><th class="text-center">#</th>
-                            <th>Foto</th>
-                            <th>Nombre</th>
-                            <th class="">Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="text-center">1</td>
-                            <td>
-                            	<img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
-                            </td>
-                            <td>JUAN PEREZ</td>
-                            <td class="td-actions">
+                    < !-- Filas -- >
+                    <tbody> 
 
-                                <button type="button">
-                                    <i class="material-icons">Eliminar</i>
-                                </button>
-                            </td>
+                        <th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </th>
+
+                        <tr> 
+                            <td> Nombre de usuario </td>
+                            <td>  </td>
+                            <td> Juan Perez </td>
                         </tr>
 
-
-
-
-
-                        <tr>
-                            <td class="text-center">2</td>
-                            <td>
-                            	<img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
-                            </td>
-                            <td>PEREZ JUAN</td>
-                            <td class="td-actions">
-
-                                <button type="button">
-                                    <i class="material-icons">Eliminar</i>
-                                </button>
-                            </td>
+                        <tr> 
+                            <td> Correo electrónico </td>
+                            <td>  </td>
+                            <td> juan.perez@gmail.com </td>
                         </tr>
 
-                      
-                        <tr>
-                            <td class="text-center">3</td>
-                            <td>
-                            	<img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
-                            </td>
-                            <td>JUANA PEREZ</td>
-                            <td class="td-actions">
-
-                                <button type="button">
-                                    <i class="material-icons">Eliminar</i>
-                                </button>
-                            </td>
+                        <tr> 
+                            <td> Idioma </td>
+                            <td> <img src = "assets/images/edit.png" alt = "*Edit*"> </td>
+                            <td> Español (ES) </td>
                         </tr>
 
-
-
-
-
-                        <tr>
-                            <td class="text-center">4</td>
-                            <td>
-                            	<img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
-                            </td>
-                            <td>PEREZ JUANA</td>
-                            <td class="td-actions">
-
-                                <button type="button">
-                                    <i class="material-icons">Eliminar</i>
-                                </button>
-                            </td>
+                        <tr> 
+                            <td> Privacidad del perfil </td>
+                            <td> <img src = "assets/images/edit.png" alt = "*Edit*"> </td>
+                            <td> Privado </td>
                         </tr>
 
-                        <tr>
-                            <td class="text-center">5</td>
-                            <td>
-                            	<img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
-                            </td>
-                            <td>Nombre persona</td>
-                            <td class="td-actions">
-
-                                <button type="button">
-                                    <i class="material-icons">Eliminar</i>
-                                </button>
-                            </td>
+                        <tr> 
+                            <td> Cambiar contraseña </td>
+                            <td> <img src = "assets/images/edit.png" alt = "*Edit*"> </td>
+                            <td>  </td>
                         </tr>
-
 
                     </tbody>
                 </table>
-                </div>
-
-                    <style>
-                        .pagination {
-                          display: inline-block;
-                          align-content: center;
-                          
-                        }
-                        
-                        .pagination a {
-                          color: black;
-                          float: left;
-                          padding: 8px 16px;
-                          text-decoration: none;
-                          transition: background-color .3s;
-                          border: 1px solid #ddd;
-                        }
-                        
-                        .pagination a.active {
-                          background-color: #9F9FE9;
-                          color: white;
-                          border: 1px solid #9F9FE9;
-                        }
-                        
-                        .pagination a:hover:not(.active) {background-color: #ddd;}
-                    </style>
-                        
-                        
-                        
-                        
-                        <div style="padding-left: 30%">
-                        <div class="pagination" >
-                          <a href="#">&laquo;</a>
-                          <a href="#">1</a>
-                          <a href="#" class="active">2</a>
-                          <a href="#">3</a>
-                          <a href="#">4</a>
-                          <a href="#">5</a>
-                          <a href="#">6</a>
-                          <a href="#">&raquo;</a>
-                        </div>
-                        </div>
-                    </div>
-                        
+            </div>
+        </div -->
+        <!--  -->
 
       </section>
 
+
+      <!-- Pestaña LISTA DE AMIGOS -->
+      <section id="friends" class="hidden">
+        <!-- No seleccionado por defecto -->
+
+        <!-- Tabla de amigos -->
+        <div class=r ow>
+          <div class="table-responsive">
+            <table style="width:100%" class="table">
+
+              <!-- Cabecera -->
+              <thead>
+                <tr>
+                  <th class="text-center">
+                    <h5><b> N° </b></h5>
+                  </th>
+                  <th>
+                    <h5><b> Foto </b></h5>
+                  </th>
+                  <th>
+                    <h5><b> Nombre </b></h5>
+                  </th>
+                  <th>
+                    <h5><b> Eliminar de mis amigos </b></h5>
+                  </th>
+                </tr>
+              </thead>
+
+              <!-- Filas -->
+              <tbody>
+                <tr>
+                  <!-- Numero de fila -->
+                  <td class="text-center"> 1 </td>
+
+                  <!-- Foto de perfil -->
+                  <td>
+                    <img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
+                  </td>
+
+                  <!-- Nombre -->
+                  <td> JUAN PEREZ </td>
+
+                  <!-- Boton -->
+                  <td class="td-actions">
+                    <button type="button">
+                      <i class="material-icons"> Eliminar </i>
+                    </button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"> 2</td>
+                  <td>
+                    <img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
+                  </td>
+                  <td> PEREZ JUAN</td>
+                  <td class="td-actions">
+
+                    <button type="button">
+                      <i class="material-icons"> Eliminar</i>
+                    </button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"> 3</td>
+                  <td>
+                    <img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
+                  </td>
+                  <td> JUANA PEREZ</td>
+                  <td class="td-actions">
+
+                    <button type="button">
+                      <i class="material-icons"> Eliminar</i>
+                    </button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"> 4</td>
+                  <td>
+                    <img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
+                  </td>
+                  <td> PEREZ JUANA</td>
+                  <td class="td-actions">
+
+                    <button type="button">
+                      <i class="material-icons"> Eliminar</i>
+                    </button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"> 5</td>
+                  <td>
+                    <img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
+                  </td>
+                  <td> NOMBRE PERSONA</td>
+                  <td class="td-actions">
+
+                    <button type="button">
+                      <i class="material-icons"> Eliminar</i>
+                    </button>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+
+            <!-- Seleccionar paginas (CSS) -->
+            <style>
+              .pagination {
+                display: inline-block;
+                align-content: center;
+
+              }
+
+              .pagination a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+                transition: background-color .3s;
+                border: 1px solid #ddd;
+              }
+
+              .pagination a.active {
+                background-color: #9F9FE9;
+                color: white;
+                border: 1px solid #9F9FE9;
+              }
+
+              .pagination a:hover:not(.active) {
+                background-color: #ddd;
+              }
+            </style>
+
+            <div style="padding-left: 30%">
+              <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+              </div>
+            </div>
+            <!-- fin Seleccionar paginas -->
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Pestaña SOLICITUD DE AMISTAD -->
       <section id="requests" class="hidden">
+        <!-- No seleccionado por defecto -->
 
-      	<div class=row>
-                <div class="table-responsive">
-                <table style="width:100%" class="table">
-                    <thead>
-                        <tr><th>A</th>
-                            <th class="text-center">#</th>
-                            <th>Foto</th>
-                            <th>Nombre</th>
-                            <th class="">Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+        <!-- Tabla de solicitudes -->
+        <div class=r ow>
+          <div class="table-responsive">
+            <table style="width:100%" class="table">
 
-
-
-
-
-
-                        <tr><td class="text-center">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="" checked="false">
-                                        <span class="form-check-sign">
-                                            <span class="check"></span>
-                                        </span>
-                                    </label>
-                                </div>
-                            </td>
-                            <td class="text-center">1</td>
-                            <td>
-                            	<img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
-                            </td>
-                            <td>JUAN PEREZ</td>
-                            <td class="td-actions">
-                                <button type="button">
-                                    <i class="material-icons">Aceptar </i>
+              <!-- Cabecera -->
+              <thead>
+                <tr>
+                  <!-- Botones aceptar/eliminar seleccionados -->
+                  <!--th class="text-center"> 
+                                <button type = "button" >
+                                    <i class="material-icons"> Aceptar seleccionadas </i>
                                 </button>
-                                <button type="button">
-                                    <i class="material-icons">Eliminar</i>
+                                
+                                <button type = "button">
+                                    <i class="material-icons"> Eliminar seleccionadas </i>
                                 </button>
-                            </td>
-                        </tr>
+                            </th -->
+
+                  <!-- Check box -->
+                  <th class="text-center">
+
+                    <div class="form-check" style="margin-bottom: 30%">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="" checked="false">
+                        <span class="form-check-sign">
+                          <span class="check"> </span>
+                        </span>
+                      </label>
+                    </div>
+
+                  </th>
+                  <th class="text-center">
+                    <h5><b> N° </b></h5>
+                  </th>
+                  <th>
+                    <h5><b> Foto </b></h5>
+                  </th>
+                  <th>
+                    <h5><b> Nombre </b></h5>
+                  </th>
+                  <th>
+                    <h5><b> Aceptar / Eliminar solicitud </b></h5>
+                  </th>
+                </tr>
+              </thead>
+
+              <!-- Filas -->
+              <tbody>
+                <tr>
+                  <!-- Check boxs -->
+                  <td class="text-center">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="" checked="false">
+                        <span class="form-check-sign">
+                          <span class="check"> </span>
+                        </span>
+                      </label>
+                    </div>
+                  </td>
+
+                  <!-- Numero de solicitud -->
+                  <td class="text-center"> 1 </td>
+
+                  <!-- Foto de perfil -->
+                  <td>
+                    <img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
+                  </td>
+
+                  <!-- Nombre -->
+                  <td> JUAN PEREZ </td>
+
+                  <!-- Botones -->
+                  <td class="td-actions">
+                    <button type="button">
+                      <i class="material-icons"> Aceptar </i>
+                    </button>
+                    <button type="button">
+                      <i class="material-icons"> Eliminar </i>
+                    </button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="text-center">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="" checked="false">
+                        <span class="form-check-sign">
+                          <span class="check"> </span>
+                        </span>
+                      </label>
+                    </div>
+                  </td>
+                  <td class="text-center"> 2 </td>
+                  <td>
+                    <img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
+                  </td>
+                  <td> PEREZ JUAN</td>
+                  <td class="td-actions">
+                    <button type="button">
+                      <i class="material-icons"> Aceptar </i>
+                    </button>
+                    <button type="button">
+                      <i class="material-icons"> Eliminar</i>
+                    </button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="text-center">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="" checked="false">
+                        <span class="form-check-sign">
+                          <span class="check"> </span>
+                        </span>
+                      </label>
+                    </div>
+                  </td>
+                  <td class="text-center"> 3 </td>
+                  <td>
+                    <img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
+                  </td>
+                  <td> JUANA PEREZ</td>
+                  <td class="td-actions">
+                    <button type="button">
+                      <i class="material-icons"> Aceptar </i>
+                    </button>
+                    <button type="button">
+                      <i class="material-icons"> Eliminar</i>
+                    </button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="text-center">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="" checked="false">
+                        <span class="form-check-sign">
+                          <span class="check"> </span>
+                        </span>
+                      </label>
+                    </div>
+                  </td>
+                  <td class="text-center"> 4 </td>
+                  <td>
+                    <img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
+                  </td>
+                  <td> PEREZ JUANA</td>
+                  <td class="td-actions">
+                    <button type="button">
+                      <i class="material-icons"> Aceptar </i>
+                    </button>
+                    <button type="button">
+                      <i class="material-icons"> Eliminar</i>
+                    </button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="text-center">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="" checked="false">
+                        <span class="form-check-sign">
+                          <span class="check"> </span>
+                        </span>
+                      </label>
+                    </div>
+                  </td>
+                  <td class="text-center"> 5 </td>
+                  <td>
+                    <img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
+                  </td>
+                  <td> NOMBRE PERSONA</td>
+                  <td class="td-actions">
+                    <button type="button">
+                      <i class="material-icons"> Aceptar </i>
+                    </button>
+                    <button type="button">
+                      <i class="material-icons"> Eliminar</i>
+                    </button>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+
+
+            <!-- Boton aceptar/eliminar todo -->
+            <div style="margin-left: 30%">
+              <button type="button">
+                <i class="material-icons"> Aceptar seleccionadas </i>
+              </button>
+
+              <button type="button">
+                <i class="material-icons"> Eliminar seleccionadas </i>
+              </button>
+            </div>
+
+            <!-- fin Boton aceptar/eliminar todo -->
 
 
 
+            <!-- Seleccionar paginas (CSS) -->
+            <style>
+              .pagination {
+                display: inline-block;
+                align-content: center;
+                padding-top: 15px;
+
+              }
+
+              .pagination a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+                transition: background-color .3s;
+                border: 1px solid #ddd;
+              }
+
+              .pagination a.active {
+                background-color: #9F9FE9;
+                color: white;
+                border: 1px solid #9F9FE9;
+              }
+
+              .pagination a:hover:not(.active) {
+                background-color: #ddd;
+              }
+            </style>
+
+            <div style="padding-left: 30%">
+              <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+              </div>
+            </div>
+            <!-- fin Seleccionar paginas -->
+
+          </div>
 
 
-                        <tr><td class="text-center">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="" checked="false">
-                                        <span class="form-check-sign">
-                                            <span class="check"></span>
-                                        </span>
-                                    </label>
-                                </div>
-                            </td>
-                            <td class="text-center">1</td>
-                            <td>
-                            	<img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
-                            </td>
-                            <td>PEREZ JUAN</td>
-                            <td class="td-actions">
-                                <button type="button">
-                                    <i class="material-icons">Aceptar </i>
-                                </button>
-                                <button type="button">
-                                    <i class="material-icons">Eliminar</i>
-                                </button>
-                            </td>
-                        </tr>
-
-                      
-                        <tr><td class="text-center">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="" checked="false">
-                                        <span class="form-check-sign">
-                                            <span class="check"></span>
-                                        </span>
-                                    </label>
-                                </div>
-                            </td>
-                            <td class="text-center">1</td>
-                            <td>
-                            	<img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
-                            </td>
-                            <td>JUANA PEREZ</td>
-                            <td class="td-actions">
-                                <button type="button">
-                                    <i class="material-icons">Aceptar </i>
-                                </button>
-                                <button type="button">
-                                    <i class="material-icons">Eliminar</i>
-                                </button>
-                            </td>
-                        </tr>
-
-
-
-
-
-                        <tr><td class="text-center">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="" checked="false">
-                                        <span class="form-check-sign">
-                                            <span class="check"></span>
-                                        </span>
-                                    </label>
-                                </div>
-                            </td>
-                            <td class="text-center">1</td>
-                            <td>
-                            	<img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
-                            </td>
-                            <td>PEREZ JUANA</td>
-                            <td class="td-actions">
-                                <button type="button">
-                                    <i class="material-icons">Aceptar </i>
-                                </button>
-                                <button type="button">
-                                    <i class="material-icons">Eliminar</i>
-                                </button>
-                            </td>
-                        </tr>
-
-                        <tr><td class="text-center">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="" checked="false">
-                                        <span class="form-check-sign">
-                                            <span class="check"></span>
-                                        </span>
-                                    </label>
-                                </div>
-                            </td>
-                            <td class="text-center">1</td>
-                            <td>
-                            	<img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
-                            </td>
-                            <td>Nombre persona</td>
-                            <td class="td-actions">
-                                <button type="button">
-                                    <i class="material-icons">Aceptar </i>
-                                </button>
-                                <button type="button">
-                                    <i class="material-icons">Eliminar</i>
-                                </button>
-                            </td>
-                        </tr>
-
-
-                    </tbody>
-                </table>
-                </div>
-
+        </div>
       </section>
 
+
+      <!-- Pestaña BUSCAR AMIGOS -->
       <section id="search" class="hidden">
- <div class="topnav">
-  Buscar Amigos 
-  <input type="text" placeholder="Search..">
-</div> 
- <div class=row>
-                <div class="table-responsive">
-                <table style="width:100%" class="table">
-                    <thead>
-                        <tr><th class="text-center">#</th>
-                            <th>Foto</th>
-                            <th>Nombre</th>
-                            <th class="">Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="text-center">1</td>
-                            <td>
-                            	<img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
-                            </td>
-                            <td>JUAN PEREZ</td>
-                            <td class="td-actions">
-                                <button type="button">
-                                    <i class="material-icons">Agregar </i>
-                                </button>
+        <!-- No seleccionado por defecto -->
 
-                            </td>
-                        </tr>
+        <!-- Caja de busqueda -->
+        <div class="topnav">
+          <input type="text" placeholder="  buscar">
+        </div>
 
+        <!-- Tabla de amigos -->
+        <div class=r ow>
+          <div class="table-responsive">
+            <table style="width:100%" class="table">
 
+              <!-- cabecera -->
+              <thead>
+                <tr>
+                  <th class="text-center">
+                    <h5><b> N° </b></h5>
+                  </th>
+                  <th>
+                    <h5><b> Foto </b></h5>
+                  </th>
+                  <th>
+                    <h5><b> Nombre </b></h5>
+                  </th>
+                  <th>
+                    <h5><b> Enviar solicitud </b></h5>
+                  </th>
+                </tr>
+              </thead>
 
+              <!-- Filas -->
+              <tbody>
+                <tr>
+                  <!-- Numero -->
+                  <td class="text-center"> 1 </td>
 
+                  <!-- Foto de perfil -->
+                  <td>
+                    <img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
+                  </td>
 
-                        <tr>
-                            <td class="text-center">2</td>
-                            <td>
-                            	<img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
-                            </td>
-                            <td>PEREZ JUAN</td>
-                            <td class="td-actions">
-                                <button type="button">
-                                    <i class="material-icons">Agregar</i>
-                                </button>
-                            </td>
-                        </tr>
+                  <!-- Nombre -->
+                  <td> JUAN PEREZ</td>
 
-                      
-                        <tr>
-                            <td class="text-center">3</td>
-                            <td>
-                            	<img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
-                            </td>
-                            <td>JUANA PEREZ</td>
-                            <td class="td-actions">
-                                <button type="button">
-                                    <i class="material-icons">Agregar </i>
-                                </button>
+                  <!-- Boton -->
+                  <td class="td-actions">
+                    <button type="button">
+                      <i class="material-icons"> Enviar </i>
+                    </button>
+                  </td>
+                </tr>
 
-                            </td>
-                        </tr>
+                <tr>
+                  <td class="text-center"> 2 </td>
+                  <td>
+                    <img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
+                  </td>
+                  <td> PEREZ JUAN</td>
+                  <td class="td-actions">
+                    <button type="button">
+                      <i class="material-icons"> Enviar </i>
+                    </button>
+                  </td>
+                </tr>
 
+                <tr>
+                  <td class="text-center"> 3 </td>
+                  <td>
+                    <img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
+                  </td>
+                  <td> JUANA PEREZ</td>
+                  <td class="td-actions">
+                    <button type="button">
+                      <i class="material-icons"> Enviar </i>
+                    </button>
+                  </td>
+                </tr>
 
+                <tr>
+                  <td class="text-center"> 4 </td>
+                  <td>
+                    <img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
+                  </td>
+                  <td> PEREZ JUANA</td>
+                  <td class="td-actions">
+                    <button type="button">
+                      <i class="material-icons"> Enviar </i>
+                    </button>
+                  </td>
+                </tr>
 
+                <tr>
+                  <td class="text-center"> 5 </td>
+                  <td>
+                    <img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
+                  </td>
+                  <td> NOMBRE PERSONA</td>
+                  <td class="td-actions">
+                    <button type="button">
+                      <i class="material-icons"> Enviar </i>
+                    </button>
+                  </td>
+                </tr>
 
+              </tbody>
+            </table>
 
-                        <tr>
-                            <td class="text-center">4</td>
-                            <td>
-                            	<img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
-                            </td>
-                            <td>PEREZ JUANA</td>
-                            <td class="td-actions">
-                                <button type="button">
-                                    <i class="material-icons">Agregar </i>
-                                </button>
-                            </td>
-                        </tr>
+            <!-- Seleccionar paginas (CSS) -->
+            <style>
+              .pagination {
+                display: inline-block;
+                align-content: center;
 
-                        <tr>
-                            <td class="text-center">5</td>
-                            <td>
-                            	<img src="assets/images/avatar.png" style="width: 100px; height: 100px;" alt="foto1">
-                            </td>
-                            <td>Nombre persona</td>
-                            <td class="td-actions">
-                                <button type="button">
-                                    <i class="material-icons">Agregar </i>
-                                </button>
-                            </td>
-                        </tr>
+              }
 
+              .pagination a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+                transition: background-color .3s;
+                border: 1px solid #ddd;
+              }
 
-                    </tbody>
-                </table>
-                </div>
+              .pagination a.active {
+                background-color: #9F9FE9;
+                color: white;
+                border: 1px solid #9F9FE9;
+              }
 
+              .pagination a:hover:not(.active) {
+                background-color: #ddd;
+              }
+            </style>
 
+            <div style="padding-left: 30%">
+              <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+              </div>
+            </div>
+            <!-- fin Seleccionar paginas -->
+          </div>
+        </div>
       </section>
 
+
+      <!-- Pestaña GESTIONAR ACTIVIDADES TIPO -->
       <section id="act" class="hidden">
+        <!-- No seleccionado por defecto -->
+
+        <div class=r ow>
+          <div class="table-responsive">
+            <table style="width:100%" class="table">
+
+              <!-- Cabecera -->
+              <thead>
+                <tr>
+                  <th class="text-center">
+                    <h5><b> N° </b></h5>
+                  </th>
+                  <th>
+                    <h5><b> Nombre </b></h5>
+                  </th>
+                  <th>
+                    <h5><b> Categoría </b></h5>
+                  </th>
+                  <th>
+                    <h5><b> Descripción </b></h5>
+                  </th>
+                  <th>
+                    <h5><b> Editar </b></h5>
+                  </th>
+                 
+                  
+                </tr>
+              </thead>
+
+              <tr>
+                <td class="text-center">
+                  1
+                </td>
+                <td> Estudiar Ramo X </td>
+                <td>
+                  Estudio
+                </td>
+                <td> Se estudiaron pautas. </td>
+                <td><button type="button">
+                        <i class="material-icons"> Editar </i>
+                      </button>
+                      <button type="button">
+                        <i class="material-icons"> Eliminar </i>
+                      </button>
+                    </td>
+                
+                
+              </tr>
+
+              <tr>
+                <td class="text-center">
+                  2
+                </td>
+                <td> Estudiar Ramo Y </td>
+                <td>
+                  Estudio
+                </td>
+                <td> Se resolvieron controles. </td>
+                <td><button type="button">
+                        <i class="material-icons"> Editar </i>
+                      </button>
+                      <button type="button">
+                        <i class="material-icons"> Eliminar </i>
+                      </button>
+                    </td>
+                
+              </tr>
+
+              <tr>
+                <td class="text-center">
+                  3
+                </td>
+                <td> Power Nap </td>
+                <td>
+                  Dormir
+                </td>
+                <td> Se necesitaba descansar. </td>
+                
+                </td>
+                <td><button type="button">
+                    <i class="material-icons"> Editar </i>
+                  </button>
+                  <button type="button">
+                    <i class="material-icons"> Eliminar </i>
+                  </button>
+                </td>
+              </tr>
+
+            </table>
+          </div>
+        </div>
+
+        <div style="margin-left: 45.5%">
+                <button type="button">
+                  <i class="material-icons"> Nueva Actividad </i>
+                </button>
+  
+                
+              </div>
+
+        <!-- Seleccionar paginas (CSS) -->
+        <style>
+          .pagination {
+            display: inline-block;
+            align-content: center;
+
+          }
+
+          .pagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid #ddd;
+          }
+
+          .pagination a.active {
+            background-color: #9F9FE9;
+            color: white;
+            border: 1px solid #9F9FE9;
+          }
+
+          .pagination a:hover:not(.active) {
+            background-color: #ddd;
+          }
+        </style>
+
+        <div style="padding-left: 40%">
+          <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div>
+        </div>
+        <!-- fin Seleccionar paginas -->
 
       </section>
 
-    </div><!-- @end #content -->
-  </div><!-- @end #w -->
+
+
+    </div>
+    <!-- @end #content -->
+  </div>
+  <!-- @end #w -->
+
+
+  <!-- Funciones Js de visibilidad de las pestañas -->
   <script type="text/javascript">
     $(function () {
       $('#profiletabs ul li a').on('click', function (e) {
@@ -537,12 +891,12 @@
         $(newcontent).removeClass('hidden');
       });
     });
+
   </script>
 
+
+
   <!-- fin Pestañas -->
-
-
-
 
 </body>
 
