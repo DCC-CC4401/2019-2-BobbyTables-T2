@@ -24,6 +24,8 @@
   <link rel="stylesheet" type="text/css" media="all" href="assets/css/styles.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" media="all" href="assets/css/table.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
 
   <!-- Optional JavaScript -->
@@ -164,16 +166,67 @@
           </div>
 
           <!-- fin Boton agregar todo -->
-          <br>
+          
+      </div>
+      
+      <div id="newAct" style="display: none">
+        <p>
+          <h6>Complete las siguientes casillas:</h6>
+        </p>
+        <div class="topnav">
+          <input type="text" style="width: 220px" placeholder="  ingrese nombre">
+          <input type="text" style="margin-left: 5px; width: 230px" placeholder="  ingrese descripción">
+          <input type="text" style="margin-left: 5px; width: 220px" placeholder="  ingrese categoría">
+        </div>
+        <style>
+          #timerContainer {
+            font-family: inherit;
+            font-weight: 100%;
+            width:700px;
+            margin:20px auto;
+            min-height: 30px;
+            border-top:0px;
+            position: absolute;
+            left: 19px;
+          }
+          .timer, .reset {
+            float:left;
+            width: 54%;
+            padding: 20px 0;
+            font-size: 20px;
+            text-align:center;
+            color: #fff;
+            background: #7979D2;
+            cursor: pointer
+          }
+          .reset {
+            background: #7979D2;
+            color: white;
+            width:14.9%;
+            border-left: 1px solid #fff;
+          }
+          .reset:hover {
+            background: #7979D2;
+          }
+          .lighter {
+            background: #7979D2
+          }
+        </style>
+        <div id="timerContainer">
+          <div class="timer"  onclick="startTimer()">Comienza tu actividad</div>
+          <div class="startTimer reset" onclick="startTimer()" >
+            <i class="fas fa-play"></i>
+          </div>
+          <div class="pauseTimer reset" onclick="pauseTimer()" >
+            <i class="fas fa-pause"></i>
+          </div>
+          <div class="resetTimer reset" onclick="resetTimer()">Resetear</div>
+        </div>
+        <script type="text/javascript" src="assets/js/stopWatch.js"></script>
+        <br><br><br><br>
       </div>
 
-      <div id="newAct" style="display: none">
-        <div class="topnav">
-          <input type="text" placeholder="  ingrese nombre">
-          <input type="text" placeholder="  ingrese descripción">
-          <input type="text" placeholder="  ingrese categoría">
-        </div>
-      </div>
+      <br>
 
       <nav id="profiletabs">
         <ul class="clearfix">
