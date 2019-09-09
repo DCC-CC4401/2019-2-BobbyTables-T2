@@ -328,3 +328,21 @@ a:hover { text-decoration: underline; }
  
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
+
+
+
+
+
+
+
+
+
+.FiltrarCategoriasDeGrilla {
+  border-style: dashed;
+  border-color: #7979D2;
+  background-color: #7979D2;
+  height: 5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  
+}
