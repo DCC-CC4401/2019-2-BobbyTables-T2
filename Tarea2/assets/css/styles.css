@@ -338,7 +338,6 @@ html[xmlns] .clearfix { display: block; }
 
 
 .FiltrarCategoriasDeGrilla {
-  border-style: dashed;
   border-color: lightgray;
   background-color: lightgray;
   height: 5rem;
@@ -348,20 +347,53 @@ html[xmlns] .clearfix { display: block; }
 }
 
 
-.BloqueActividad1 {
+.BloqueActividad-Dormir {
   border-color: blue;
-  background-color: #8080ff;
+  background-color: #4d79ff;
   border-radius: 8px;
 }
 
-.BloqueActividad2 {
+.BloqueActividad-Estudiar {
   border-color: red;
-  background-color: #ffb3b3;
+  background-color: #ff4d4d;
   border-radius: 8px;
 }
 
-.BloqueActividad3 {
+.BloqueActividad-Socializar {
   border-color: green;
   background-color: #b3ffb3;
   border-radius: 8px;
 }
+
+.BloqueActividad-Jugar {
+  border-color: orange;
+  background-color: #ffa600;
+  border-radius: 8px;
+}
+
+.BloqueActividad-Ejercicio {
+  border-color: yellow;
+  background-color: yellow;
+  border-radius: 8px;
+}
+
+.BloqueActividad-Viajar {
+  border-color: brown;
+  background-color: brown;
+  border-radius: 8px;
+}
+
+.BloqueActividad-Clases {
+  border-color: gray;
+  background-color: gray;
+  border-radius: 8px;
+}
+
+.BloqueActividad-Otros {
+  border-color: purple;
+  background-color: #b300b3;
+  border-radius: 8px;
+}
+
+
+
