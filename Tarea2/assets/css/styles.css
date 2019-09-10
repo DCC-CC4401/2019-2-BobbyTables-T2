@@ -339,8 +339,8 @@ html[xmlns] .clearfix { display: block; }
 
 .FiltrarCategoriasDeGrilla {
   border-style: dashed;
-  border-color: #7979D2;
-  background-color: #7979D2;
+  border-color: lightgray;
+  background-color: lightgray;
   height: 5rem;
   margin-bottom: 2rem;
   border-radius: 8px;
